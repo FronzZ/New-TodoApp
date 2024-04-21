@@ -1,0 +1,67 @@
+.todo-list li.editing {
+   border-bottom: none;
+   padding: 0;
+}
+
+.todo-list li.editing .edit {
+   display: block;
+   width: calc(100% - 43px);
+   padding: 12px 16px;
+   margin: 0 0 0 43px;
+}
+
+.todo-list li.editing .view {
+   display: none;
+}
+
+.todo-list li label {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px 85px 15px 60px;
+}
+
+.todo-list li .view {
+   position: relative;
+}
+
+.todo-list li label .description,
+.todo-list li label .created {
+   font-size: 13px;
+   color: gray;
+}
+
+.todo-list li label .description {
+   display: flex;
+   width: 40px;
+   flex-direction: column;
+   align-items: end;
+}
+
+.todo-list li label .title {
+   word-break: break-all;
+   display: block;
+   line-height: 1.2;
+   transition: color 0.4s;
+   font-weight: 400;
+   color: #4d4d4d;
+}
+
+.todo-list li.completed label .title {
+   color: #cdcdcd;
+   text-decoration: line-through;
+}
+
+.todo-list li .icon {
+   width: 30px;
+   height: 40px;
+   font-size: 34px;
+   color: #cc9a9a;
+   margin: auto 0;
+   transition: color 0.2s ease-out;
+   cursor: pointer;
+}
+
+.todo-list li .edit {
+   display: none;
+}
